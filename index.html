@@ -64,7 +64,9 @@
             justify-content: center;
             align-items: center;
             padding: 4rem 1rem;
+            padding-bottom: 8rem; /* Ajuste para evitar sobreposición en móvil */
             transition: opacity 0.5s ease-in-out;
+            position: relative; /* Necesario para el logo en la esquina */
         }
     </style>
 </head>
@@ -72,11 +74,12 @@
 
     <main id="presentation-container">
         <!-- Slide 1: Banner Inicial -->
-        <section id="slide-1" class="slide relative text-white">
+        <section id="slide-1" class="slide text-white">
             <div class="absolute inset-0 bg-black opacity-40 z-0"></div>
             <img src="https://ik.imagekit.io/50wnllxkw/panama%20canal.jpg?updatedAt=1752012846877" class="absolute inset-0 w-full h-full object-cover z-0" alt="Vista del Canal de Panamá" onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/212529/FFFFFF?text=Panamá';">
             <div class="container mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-                 <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-28 mb-8" onerror="this.onerror=null;this.src='https://placehold.co/300x96/FFFFFF/000000?text=TherapyPlus';">
+                 <!-- Logo Gigante -->
+                 <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-48 mb-8" onerror="this.onerror=null;this.src='https://placehold.co/400x150/FFFFFF/000000?text=TherapyPlus';">
                 <div class="max-w-4xl p-8 rounded-lg bg-black/50">
                     <img src="https://ik.imagekit.io/50wnllxkw/Axa-Logo.png?updatedAt=1752011618012" alt="Logo AXA" class="h-10 mb-6 mx-auto" onerror="this.onerror=null;this.src='https://placehold.co/150x40/FFFFFF/000000?text=AXA';">
                     <h1 class="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg">
@@ -86,6 +89,9 @@
                         Propuesta de fisioterapia a domicilio diseñada para ofrecer a los asegurados de AXA una experiencia de rehabilitación excepcional.
                     </p>
                 </div>
+            </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-80">
             </div>
         </section>
 
@@ -113,6 +119,9 @@
                         <p class="text-gray-600">Un entorno familiar y un plan a medida fomentan una recuperación más rápida y sostenible.</p>
                     </div>
                 </div>
+            </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-50">
             </div>
         </section>
 
@@ -146,6 +155,9 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-50">
+            </div>
         </section>
 
         <!-- Slide 4: Metodología -->
@@ -177,6 +189,9 @@
                         <p class="text-gray-600">Informe final a AXA y al médico tratante con evolución, logros y recomendaciones.</p>
                     </div>
                 </div>
+            </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-50">
             </div>
         </section>
 
@@ -227,6 +242,9 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-50">
+            </div>
         </section>
 
         <!-- Slide 6: Alianza Estratégica -->
@@ -257,6 +275,9 @@
                     </div>
                 </div>
              </div>
+             <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-50">
+            </div>
         </section>
 
         <!-- Slide 7: Próximos Pasos -->
@@ -281,11 +302,14 @@
                     </p>
                 </div>
             </div>
+            <div class="absolute bottom-24 right-8 z-20">
+                <img src="https://ik.imagekit.io/50wnllxkw/TherapyPlus%20Logo%20Final%20Sin%20Fondo%20(1)%20(1).png?updatedAt=1752014996549" alt="Logo TherapyPlus" class="h-20 opacity-80">
+            </div>
         </section>
     </main>
     
     <!-- Controles de Navegación -->
-    <div id="navigation-controls" class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm p-4 shadow-lg border-t border-gray-200">
+    <div id="navigation-controls" class="fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-sm p-4 shadow-lg border-t border-gray-200 z-30">
         <div class="container mx-auto flex justify-between items-center">
             <button id="prev-btn" class="bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-gray-300 transition-colors">Anterior</button>
             <div id="slide-counter" class="text-sm text-gray-600"></div>
